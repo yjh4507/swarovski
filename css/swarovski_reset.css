@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+* {margin:0; padding:0; box-sizing:border-box; font-family:'MaruBuri-Regular';}
+ul,li,ol {list-style:none; margin:0; padding:0;}
+a {text-decoration:none;}
+button {cursor: pointer;}
+
+/* 마루부리체 */
+@font-face {
+  font-family: 'MaruBuri-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
