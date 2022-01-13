@@ -24,12 +24,16 @@ $(document).ready(function(){
         nav.removeClass("active");
         nav.removeClass("active_b");
         nav.eq(i).addClass("active");
+        nav.eq(i).children("a").css("color","#333");
+        nav.eq(i-1).children("a").css("color","white");
       }else if(wScroll >= contents.eq(2).offset().top && wScroll < contents.eq(3).offset().top){
         nav.removeClass("active");
         nav.eq(1).addClass("active_b");
+        nav.children("a").css("color","white");
       }else if (wScroll < contents.eq(1).offset().top){
         nav.removeClass("active");
-      }
-    };
+        nav.eq(i).children("a").css("color","white");
+      }      
+    };  
   });
 });

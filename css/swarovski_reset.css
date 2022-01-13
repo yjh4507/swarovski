@@ -12,3 +12,9 @@ button {cursor: pointer;}
   font-weight: normal;
   font-style: normal;
 }
+/* /노토산스/ */
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
