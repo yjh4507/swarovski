@@ -20,4 +20,17 @@ $(document).ready(function () {
 });
 
 // bottom
+$(function(){
+    $(".prev").click(function(){
+        $(".sec2_slide li:last").prependTo(".sec2_slide");
+        $(".sec2_slide").css({marginLeft:-300});
 
+        $(".sec2_slide").stop().animate({marginLeft:0},300);
+    });
+    $(".next").click(function(){
+        $(".sec2_slide").stop().animate({marginLeft:-300},300, function(){
+            $(".sec2_slide li:first").appendTo(".sec2_slide");
+            $(".sec2_slide").css({marginLeft:0});
+        });
+    });
+});    
